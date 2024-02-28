@@ -39,6 +39,12 @@ step5:git push -u origin main
 allow authorize
 
 
+To make connection use git fork
+to directly copy use git clone
+to pull from ur repository git pull origin main/master
+
+
+
 
 
 

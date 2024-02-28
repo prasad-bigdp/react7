@@ -1,0 +1,42 @@
+
+Git: Git is a Distributed version control system. it keeps track of changes to your application. git is application so you need to download and install
+
+Install Git: https://git-scm.com/downloads
+click for windows -->standalone installer
+In installer click always next but select default editor as vscode
+
+why vscode?
+Huge community, Extensions
+
+After installing check git version by " git -v"
+
+
+GitHub:
+Github is a website which is used to maintain,store or deploy our application source code
+
+we have alternatives like gitlab,bitbucket etc..,
+it is developed and maintained by Microsoft
+
+goto github.com ,click signup and create an account
+repository is like a folder. create a new repository-->public
+
+configurations:
+Go to github ,left side on account,click settings-->signin-->github
+
+open terminal--->new terminal
+
+git config -g user.name "ur username"
+git config -g user.email "ur email"
+
+
+Steps to push the code:
+step1: git init
+step2:git add file-name or git add .
+
+
+
+
+
+
+
+

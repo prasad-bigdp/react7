@@ -36,7 +36,7 @@ step3:git commit -m "git demo"
 step4:git remote add origin https://github.com/prasad-bigdp/react7.git
 step5:git push -u origin main
 
-
+allow authorize
 
 
 

@@ -32,6 +32,8 @@ git config -g user.email "ur email"
 Steps to push the code:
 step1: git init
 step2:git add file-name or git add .
+step3:git commit -m "git demo"
+
 
 
 

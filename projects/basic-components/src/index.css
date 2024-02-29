@@ -1,0 +1,14 @@
+img
+{
+  height: 100px;
+  width: 100px;
+}
+.movies
+{
+  display: flex;
+  gap: 20px;
+}
+.movie{
+  padding: 50px;
+  box-shadow: 5px 5px 5px black;
+}

@@ -1,23 +1,23 @@
 const moviesData = [
 	{
-		image:
-			"https://img.etimg.com/thumb/width-640,height-480,imgsize-50524,resizemode-75,msid-95528664/magazines/panache/the-wait-for-pushpa-2-gets-longer-allu-arjun-starrer-may-release-in-2024/the-shooting-schedule-for-pushpa-2-begins-.jpg",
+		image: "../../public/assets/pushpa.webp",
 		title: "Pushpa",
+		rating:8.1
 	},
 	{
-		image:
-			"https://m.media-amazon.com/images/M/MV5BZDNlNzBjMGUtYTA0Yy00OTI2LWJmZjMtODliYmUyYTI0OGFmXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_FMjpg_UX1000_.jpg",
+		image: "../../public/assets/kgf.jpg",
 		title: "KGF",
+		rating:9.2
 	},
 	{
-		image:
-			"https://m.media-amazon.com/images/M/MV5BNzQ0YTYzOWQtZTNjZi00NjQ0LWEzNDMtNjUxZGRjZmQ2NzBjXkEyXkFqcGdeQXVyMTIyNzY0NTMx._V1_.jpg",
+		image: "../../public/assets/rs.jpg",
 		title: "Radhe Shyam",
+		rating:5.6
 	},
 	{
-		image:
-            "https://m.media-amazon.com/images/I/815qtzaP9iL._AC_UF1000,1000_QL80_.jpg",
-        title:"Shawshank redemption"
+		image: "../../public/assets/shawshank.jpg",
+		title: "Shawshank redemption",
+		rating:9.8
 	},
 ]
 export default moviesData;

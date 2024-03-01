@@ -1,0 +1,15 @@
+props: props are the short form of properties.
+whenever parent component instantiate the child component, it also passes some properties in the form of object(key,value pairs)
+for example
+//parent.jsx
+<child x="value" y="value2" />
+then child component receives props object with x,y as keys and value,value2 as their respective values
+props={
+    x:value,
+    y:value2
+}
+
+
+
+1. Destructuring: you can destructure an object in the Child components
+eg: const {x,y} = props;

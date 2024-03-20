@@ -1,0 +1,22 @@
+Hooks:
+Hooks are the functions implemented in react 16.8 version. These hooks can replace LifeCycle Methods and can make programs more optimisized.
+functional component are basically stateless and cannot have life cycle methods so we use hooks to bring state and life cycle methods into functional components
+componentDidMount+componentDidUpdate==>useEffect.
+Every hook in react starts with "use"
+1.useState(): useState is used to update the value and render the component. it is called state
+   const [value,fn]=useState(initialValue);
+2. useEffect(): useEffect is used to handle sideEffects. sideEffect means anything which doesn't effect UI Directly.
+useEffect(callbackfn,[dependencies])
+if no dependencies array then useEffect will get triggered for every state change
+if empty dependencies arrya, then useEffect will get triggereed for only one time(mount)
+if any dependencies, then useEffect will get Triggered for Every State Change of that dependency.
+3. useContext():
+useContext works as a consumer for content provider.
+const {values}=useContext(contextname).
+In context API we provide global values by contextname.provide values and we retrive the values by useContext
+4. useRef(): useRef is used for references. mainly this is used for DOM manipulation.
+for example
+const inp= useRef();
+<input type="text" ref={inp} />
+In the above code , whenever user enters somevalue in input automatically dom updates that value into inp .  this type of components are called uncontrolled components.
+5.useNaviage() & useParams()

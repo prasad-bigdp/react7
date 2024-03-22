@@ -10,6 +10,11 @@ useEffect(callbackfn,[dependencies])
 if no dependencies array then useEffect will get triggered for every state change
 if empty dependencies arrya, then useEffect will get triggereed for only one time(mount)
 if any dependencies, then useEffect will get Triggered for Every State Change of that dependency.
+
+useEffect runs after Paint is Done. After component render-->DOM constructed--->paint --->useEffect
+
+useEffect will have some clearup logic which we can write after return in useEffect.
+
 3. useContext():
 useContext works as a consumer for content provider.
 const {values}=useContext(contextname).
@@ -20,3 +25,11 @@ const inp= useRef();
 <input type="text" ref={inp} />
 In the above code , whenever user enters somevalue in input automatically dom updates that value into inp .  this type of components are called uncontrolled components.
 5.useNaviage() & useParams()
+6. useLayoutEffect: it is exactly similar to useEffect but only difference is useLayoutEffect will triggered before the Paint. immediate after the DOM.
+We use it in the cases of DOM manipulative data
+7.useMemo: it is used to memeorize expensive calculations.
+it is used to memorize callback functions.
+React.memo is Higher order component(it means it will take component and return component if input props are changed)
+8.useCallback
+9.useImpertiveHandle
+10.useReducer

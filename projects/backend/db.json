@@ -1,0 +1,21 @@
+{
+    "movies":[
+        {
+            "Title":"Pursuit of Happiness",
+            "Year":1998,
+            "Poster":"https://m.media-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_FMjpg_UX1000_.jpg"
+        },
+        {
+            "Title":"salaar",
+            "Year":2023,
+            "Poster":"https://th.bing.com/th/id/OIF.7aVrs7YTv1iwZx3f6jxyvg?rs=1&pid=ImgDetMain"
+        },
+        {
+            
+                "Title": "RRR",
+                "Year": 2022,
+                "Poster": "https://th.bing.com/th/id/OIP.tNguNW9JxnJxwPC4-fuqQQHaLH?rs=1&pid=ImgDetMain"
+            
+        }
+    ]
+}

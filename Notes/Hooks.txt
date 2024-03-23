@@ -30,6 +30,6 @@ We use it in the cases of DOM manipulative data
 7.useMemo: it is used to memeorize expensive calculations.
 it is used to memorize callback functions.
 React.memo is Higher order component(it means it will take component and return component if input props are changed)
-8.useCallback
-9.useImpertiveHandle
-10.useReducer
+8.useCallback: useCallback is used to remember the callback function. it will triggered only if inputs of the functions are changed(dependencies updated)
+9.useImpertiveHandle & forWardRef
+10.useReducer & Redux

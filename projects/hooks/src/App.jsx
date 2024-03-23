@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useMemo, useRef } from 'react'
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef } from 'react'
 import { useState } from 'react'
 import './App.css'
 import Child from './Child'
@@ -29,7 +29,8 @@ const App = () =>
   //   {
   //     clearTimeout(timeoout)
   //   }
-  // },[searchTerm])
+  // },[searchTerm])\
+
   const handleCount = () =>
   {
     setCount((prevCount)=>prevCount + 1)
@@ -37,7 +38,7 @@ const App = () =>
     console.log(count)
   }
  
-  const factorial = () =>
+  const factorial = useCallback(() =>
   {
     console.log(count2);
     let f = 1;
@@ -46,8 +47,8 @@ const App = () =>
       f=f*i
     }
     setFact(f)
-  }
-   useMemo(() => factorial(), [count2])
+  },[count2])
+   useMemo(() => factorial(),[count2])
   return (
 		<div>
 			<p>Count:{count}</p>

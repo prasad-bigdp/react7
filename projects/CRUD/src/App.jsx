@@ -1,13 +1,15 @@
-import React,{useState} from 'react'
-import Movies from './Movies'
-const App = () =>
-{
-  
-  
-  return (
-    <>
-        <Movies />
-		</>
+// App.js
+import React from "react"
+import Movies from "./Movies"
+import { MovieProvider } from "./MovieContext"
+
+const App = () => {
+	return (
+		<MovieProvider>
+			<div>
+				<Movies />
+			</div>
+		</MovieProvider>
 	)
 }
 

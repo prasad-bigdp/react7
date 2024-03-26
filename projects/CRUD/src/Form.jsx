@@ -1,6 +1,5 @@
 // Form.js
 import React, { useState, useEffect } from "react"
-import { useMovieContext } from "./MovieContext"
 
 const Form = ({ isOpen, onClose, handlePost, movie }) => {
 	const [formData, setFormData] = useState({
@@ -49,7 +48,7 @@ const Form = ({ isOpen, onClose, handlePost, movie }) => {
 				className='relative form p-2 w-full'
 				onSubmit={handleSubmit}>
 				<input
-					type='hidden'
+					type='number'
 					name='id'
 					value={formData.id}
 					onChange={handleChange}

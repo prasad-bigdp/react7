@@ -1,12 +1,10 @@
 // MovieContext.js
-import React, { createContext, useContext, useState, useEffect } from "react"
+import React, { createContext,useState, useEffect } from "react"
 import axios from "axios"
 
 const MovieContext = createContext()
 
-export const useMovieContext = () => {
-	return useContext(MovieContext)
-}
+
 
 export const MovieProvider = ({ children }) => {
 	const [movies, setMovies] = useState([])
@@ -21,7 +19,9 @@ export const MovieProvider = ({ children }) => {
 
 	const handlePost = (postData) => {
 		const existingMovie = movies.find((m) => m.id === postData.id)
-		if (existingMovie) {
+		if (existingMovie)
+		{
+			console.log(postData,existingMovie)
 			axios
 				.put(`http://localhost:3000/movies/${postData.id}`, postData)
 				.then(() => {

@@ -6,9 +6,7 @@ import { MovieProvider } from "./MovieContext"
 const App = () => {
 	return (
 		<MovieProvider>
-			<div>
 				<Movies />
-			</div>
 		</MovieProvider>
 	)
 }

@@ -1,11 +1,12 @@
 // Movies.js
 import React, { useState } from "react"
-import { useMovieContext } from "./MovieContext"
+import { useContext } from "react"
+import MovieContext from "./MovieContext"
 import Form from "./Form"
 
 const Movies = () => {
 	const { movies, formOpen, handleDelete, openForm, closeForm, handlePost } =
-		useMovieContext()
+		useContext(MovieContext)
 	const [selectedMovie, setSelectedMovie] = useState(null)
 
 	const editMovie = (movie) => {
